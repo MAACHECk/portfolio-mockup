@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+--darkblue: #2B2D42;
+--lightgrey: #edf2f4;
+--red: #ef233c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: var(--darkblue) ;
+    height: 4rem;
+    text-align: center;
+    width: auto;
+    font-weight: 400;
+    font-size: 1.25em; 
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--lightgrey);
+}
+
+.nav-bar li {
+    padding-right: 3.4375em;
+    list-style: none;
+    
+}
+
+.nav-bar ul li:nth-child(1) a  {
+    color: var(--red);
+}
+
+body {
+    background-color: var(--lightgrey);
+    text-align: center;
+}
+
+.hero {
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--darkblue);
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.hero p {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.25em;
+}
+
+.scroll {
+    font-size: 1em;
+    color: var(--red);
+}
+
+.arrow {
+    border: solid var(--red);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+}
+
+.projects {
+    background: var(--lightgrey);
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-gap: 3em;
+    width: 100%;
+    padding: 0 5em;
+}
+
+.projects div {
+    border: solid var(--darkblue);
+    height: auto;
+}
+
+.projects h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-top: 2em;
+    color: var(--darkblue);
+    grid-column: 1 / 5;
+}
+
+#tribute {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#survey {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#technical {
+    grid-column: 3 /4;
+    grid-row: 2 / 3;
+}
+
+#product {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+}
+
+img {
+    position: relative;
+    width: 100%;
+}
+
+
+
