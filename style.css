@@ -43,7 +43,8 @@ header {
 .nav-bar li {
     padding-right: 3.4375em;
     list-style: none;
-    
+    text-align: center;
+    padding: 0 2em;
 }
 
 .nav-bar ul li:nth-child(1) a  {
@@ -93,11 +94,8 @@ body {
 .projects {
     background: var(--lightgrey);
     margin-top: 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr;
-    grid-gap: 3em;
-    width: 100%;
+    display: flex;
+    gap: 1em;
     padding: 0 5em;
 }
 
@@ -108,13 +106,12 @@ body {
 .projects div {
     border: solid var(--darkblue);
     border-radius: 1em;
-    height: auto;
 }
 
-.projects h2 {
+#projects h2 {
     font-size: 2em;
     font-weight: 400;
-    margin-top: 2em;
+    margin: 2em 0;
     color: var(--darkblue);
     grid-column: 1 / 5;
 }
@@ -122,6 +119,7 @@ body {
 .projects a {
     text-decoration: none;
 }
+
 
 #tribute {
     grid-column: 1 / 2;
@@ -193,5 +191,36 @@ footer {
     padding-left: 1rem;
     align-items: center;
 }
+
+@media  (max-width: 1050px) {
+
+    .projects {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 3em;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero h1 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    header {
+        font-size: 1em; 
+    }
+
+    .work-together h1 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
 
 
