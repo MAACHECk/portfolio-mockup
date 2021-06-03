@@ -101,8 +101,13 @@ body {
     padding: 0 5em;
 }
 
+.projects p {
+    padding: .25em;
+}
+
 .projects div {
     border: solid var(--darkblue);
+    border-radius: 1em;
     height: auto;
 }
 
@@ -112,6 +117,10 @@ body {
     margin-top: 2em;
     color: var(--darkblue);
     grid-column: 1 / 5;
+}
+
+.projects a {
+    text-decoration: none;
 }
 
 #tribute {
@@ -135,9 +144,54 @@ body {
 }
 
 img {
-    position: relative;
     width: 100%;
+    object-fit: fill;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
+button {
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    background: transparent;
+    cursor: pointer;
+    height: 2em;
+    width: 4em;
+    font-family: 'Lato', sans-serif;
+    margin: .25em .5em;  
+}
+
+.work-together {
+    margin-top: 10rem;
+}
+
+.work-together h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.work-together p {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.25em;
+}
+
+.work-together button {
+    margin: 3em 0;
+    width: 10em;
+    background: var(--darkblue);
+    color: var(--lightgrey);
+    border-radius: 1em;
+}
+
+footer {
+    height: 3rem ;
+    background-color: var(--darkblue);
+    color: var(--lightgrey);
+    text-align: justify;
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
 
 
